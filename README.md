@@ -6,6 +6,9 @@ Gulp plugin for removing source maps references from files.
 
 ## Usage
 ```
+const gulp = require('gulp');
+const removeSourcemaps = require('gulp-remove-sourcemaps');
+
 gulp.src(src)
     .pipe(removeSourcemaps())
     .pipe(gulp.dest(dst));
