@@ -25,11 +25,8 @@ module.exports = function() {
     }
 
     let contents = file.contents.toString(encoding);
-    const sourceMap = contents.indexOf('//# sourceMappingURL=');
-
-    if(sourceMap > -1) {
-      contents = contents.slice(0, sourceMap);
-    }
+    const regex = /\/\/# sourceMappingURL=.*/g;
+    contents = contents.replace(regex, '')
 
     file.contents = Buffer.from(contents, encoding);
 
