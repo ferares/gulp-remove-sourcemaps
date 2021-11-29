@@ -1,6 +1,6 @@
 {
   "name": "gulp-remove-sourcemaps",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Remove source maps references from files.",
   "main": "index.js",
   "scripts": {
