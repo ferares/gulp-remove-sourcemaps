@@ -23,7 +23,7 @@ module.exports = function() {
     }
 
     let contents = file.contents.toString(encoding);
-    const regex = /.*# sourceMappingURL=.*/g;
+    const regex = /(?:\/\/|\/\*)# sourceMappingURL=.*/g;
     contents = contents.replace(regex, '')
 
     file.contents = Buffer.from(contents, encoding);
