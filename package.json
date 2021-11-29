@@ -4,7 +4,7 @@
   "description": "Remove source maps references from files.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 60000"
   },
   "author": "Fermín Ares <fermin@ares.com>",
   "license": "ISC",
@@ -21,6 +21,8 @@
   ],
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-jsvalidate": "^5.0.0",
+    "gulp-w3c-css": "^2.0.0",
     "mocha": "^9.1.3",
     "stream-assert": "^2.0.3"
   }
